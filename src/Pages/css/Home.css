@@ -1,0 +1,150 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 180px 40px 100px;
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-left {
+  max-width: 50%;
+}
+
+.hello {
+  color: #f9b938;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 20px 0px ;
+}
+
+.highlight {
+  color: #f9b938;
+  font-weight: bold;
+}
+
+.animated-role {
+  font-size: 22px;
+  font-weight: 500;
+  color: #f9b938;
+  height: 30px;
+  transition: opacity 0.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin: 25px 0;
+  color: #ccc;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn.yellow {
+  background-color: #f9b938;
+  color: black;
+}
+
+.btn.dark {
+  background-color: #111;
+  color: white;
+  border: 1px solid #333;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.home-right {
+  max-width: 45%;
+  text-align: center;
+}
+
+.profile-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.float-img {
+  animation: floatZoom 6s ease-in-out infinite;
+  transition: transform 0.4s ease;
+}
+
+/* Image smooth float & zoom */
+@keyframes floatZoom {
+  0%, 100% {
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    transform: scale(1.03) translateY(-8px);
+  }
+}
+/* Home-right container animation */
+.home-right {
+  max-width: 45%;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(100px) rotate(-5deg) scale(0.9);
+  animation: imageEnterRotateZoom 1.5s ease-out forwards;
+}
+
+/* Profile Image Styling with larger size */
+.profile-img {
+  width: 600px;       /* Increased width */
+  height: 400px;      /* Increased height */
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* On Hover */
+.profile-img:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Animation Keyframes */
+@keyframes imageEnterRotateZoom {
+  0% {
+    opacity: 0;
+    transform: translateX(100px) rotate(-5deg) scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-10px) rotate(1deg) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg) scale(1);
+  }
+}

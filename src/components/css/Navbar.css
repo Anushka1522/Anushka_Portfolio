@@ -1,0 +1,60 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f5b70a; /* Yellow color */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus,
+.nav-links li a.active {
+  color: #f5b70a; /* Yellow on hover */
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: #f5b70a;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}

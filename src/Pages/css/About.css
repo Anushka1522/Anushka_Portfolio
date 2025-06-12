@@ -1,0 +1,72 @@
+.about-section {
+  background-color: #000;
+  color: #f0f0f0;
+  padding: 60px 10%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about-title span {
+  color: #f5af19; /* golden yellow */
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.highlight {
+  color: #f5af19;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 16px;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.tech-heading {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  color: #f5af19;
+}
+
+.tech-list {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.tech-list ul {
+  list-style-type: '➤ ';
+  padding-left: 20px;
+}
+
+.tech-list li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.resume-btn {
+  display: inline-block;
+  background-color: #f5af19;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #e89c14;
+  transform: scale(1.05);
+}
